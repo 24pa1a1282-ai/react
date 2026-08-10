@@ -1,0 +1,36 @@
+github repo:: https://github.com/bharathsimhareddyv/vibt
+
+
+Components -- Building Blocks of React and a peace of reusable code 
+Props -- passing data from one comp to other
+State --
+
+Process to create React App
+npm create vite@latest
+appname
+react
+js
+eslint
+yes
+npm run dev
+
+******JS functions******
+
+Normal functions
+Function Expression
+Arrow Function
+Deafult parameter functions
+Ananymous Function 
+Callback Function
+Multi Parameter Function
+IIFE = Immediate Invoke Function Expression
+
+***** Array Higher Order Methods/Functions******
+foreach()
+map(), ---
+reduce(), ---
+find(), ---
+filter(), ---
+every(),
+some()
+

@@ -1,6 +1,7 @@
 import React from 'react'
 import Child1 from './Child1'
 import Child2 from './Child2'
+import Students from '../Students'
 
 const GrandFather = () => {
   const land = 10/2 //variable is land
@@ -13,6 +14,9 @@ const GrandFather = () => {
       <hr />
       {/* //assest is a parameter which stores land variable */}
       <Child2 assest={land}/> 
+
+      <hr />
+      <Students assest={land}/>
     </div>
   )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Child2 = (props) => {
+const Child2 = ({assest}) => {
   return (
     <div>
       This is from Child 2
-      <p>{props.assest}</p>
+      <p>{assest}</p>
     </div>
   )
 }
