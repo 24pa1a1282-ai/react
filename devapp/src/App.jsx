@@ -1,4 +1,4 @@
-import Students from "./Students"
+import Students from "./Props/Students"
 import GrandFather from "./Props/GrandFather"
 
 
