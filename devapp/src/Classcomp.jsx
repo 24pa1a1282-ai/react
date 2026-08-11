@@ -2,18 +2,17 @@ import { Component } from "react";
 class Timer extends Component{
    constructor(){
      this.state ={
-        timer :0
+        count :0
     } 
     this.componentDidMount(){
-       this.timer = setInterval(()=>{
-        this.setState = this.timer + 1
-       },1000)
+       this.setState = this.count + 1
+     
     }
     this.componentDidUpdate(){
-        this.timer
+        this.count
     }
     this.componentWillUnmount(){
-        clearInterval(this.timer)
+        this.count
     }
    }
 }

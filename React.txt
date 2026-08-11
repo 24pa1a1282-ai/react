@@ -2,8 +2,11 @@ github repo:: https://github.com/bharathsimhareddyv/vibt
 
 
 Components -- Building Blocks of React and a peace of reusable code 
+**Functional Components
+**Class Components
+
 Props -- passing data from one comp to other
-State --
+State -- managing the component from one state  to other (State Management)
 
 Process to create React App
 npm create vite@latest
@@ -32,5 +35,23 @@ reduce(), ---
 find(), ---
 filter(), ---
 every(),
-some()
+some(),
+
+Class Components LifeCycle Methods
+-- componentDidMount
+-- componentDidUpdate
+-- componentDidUnmount
+
+Hooks in Functional Components
+-- useState
+-- useEffect
+-- useRef
+-- useMemo
+-- useCallBack
+-- useLayoutEffect
+-- useReducer
+-- useContext (Context API)
+-- customHooks
+
+
 
