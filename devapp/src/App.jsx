@@ -5,6 +5,9 @@ import PassState from "./Hooks/PassState"
 import Hidetext from "./Hooks/Hidetext"
 import Input from "./Hooks/Input"
 import Form from "./Hooks/Form"
+import Home from "./Home"
+import Login from "./Login"
+import DashBoard from "./DashBoard"
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 
 function App(){
@@ -18,9 +21,12 @@ const greet =()=>{
 
     <BrowserRouter>
     <Routes>
+      <Route path="/" element={<Home/>}/>
       <Route path="/input" element={<Input/>}/>
       <Route path="/state" element={<UseState/>}/>
       <Route path="/signupform" element={<Form/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/dashboard" element={<DashBoard/>}/>
     </Routes>
     </BrowserRouter>
 
