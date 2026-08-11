@@ -3,7 +3,7 @@ const PassState = () => {
 const[showPassword , setShowPassword]=useState(false)
 const[inputPass , setInputPass]=useState("")
 const showhide =()=>{
-    setShowPassword(showPassword=>!showPassword)
+    setShowPassword(prev=>!prev)
 }
   return (
     <div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 const UseState = () => {
 const[count,setCount]=useState(0)
 const inc =()=>{
-    setCount(count+5)
+    setCount((prev)=>prev+1)
 }
 const dec =()=>{
     setCount(count-3)

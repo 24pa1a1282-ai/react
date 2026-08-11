@@ -2,7 +2,9 @@ import Students from "./Props/Students"
 import GrandFather from "./Props/GrandFather"
 import UseState from "./Hooks/UseState"
 import PassState from "./Hooks/PassState"
-
+import Hidetext from "./Hooks/Hidetext"
+import Input from "./Hooks/Input"
+import Form from "./Hooks/Form"
 
 function App(){
 const greet =()=>{
@@ -15,7 +17,10 @@ const greet =()=>{
     <Students/> */}
     {/* <GrandFather/> */}
     {/* <UseState/> */}
-    <PassState/>
+    {/* <PassState/> */}
+    {/* <Hidetext/> */}
+    {/* <Input/> */}
+<Form/>
     </>
   )
 }
