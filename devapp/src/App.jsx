@@ -1,6 +1,7 @@
 import Students from "./Props/Students"
 import GrandFather from "./Props/GrandFather"
 import UseState from "./Hooks/UseState"
+import PassState from "./Hooks/PassState"
 
 
 function App(){
@@ -13,7 +14,8 @@ const greet =()=>{
     <h1>Hello </h1>
     <Students/> */}
     {/* <GrandFather/> */}
-    <UseState/>
+    {/* <UseState/> */}
+    <PassState/>
     </>
   )
 }

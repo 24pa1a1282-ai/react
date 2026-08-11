@@ -7,6 +7,8 @@ const inc =()=>{
 const dec =()=>{
     setCount(count-3)
 }
+
+
 console.log(count)
   return (
     <div>
