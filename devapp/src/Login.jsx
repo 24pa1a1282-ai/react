@@ -8,12 +8,19 @@ const Login = () => {
     const[password,setPassword] = useState("")
     const[emails ,setEmails]=useState("")
 
-    const dashboardfn =(e)=>{
-     e.preventDefault()
+    const dashboardfn =()=>{
+      try{
+console.log("Running")
      setEmails(email)
+     console.log("Running")
 navigate('/dashboard')
+      }catch(error){
+console.log(error)
+      }
     }
 
+
+console.log(emails)
   return (
     <div>
       <h1>Login Form</h1>
@@ -31,7 +38,7 @@ navigate('/dashboard')
       onChange={(e)=>setPassword(e.target.value)}
       /> <br />
 
-      <button type='submit'>Submit</button>
+      <button type="submit">Submit</button>
 </form>
 <DashBoard useremail={emails}/>
     </div>

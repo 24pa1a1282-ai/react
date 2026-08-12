@@ -8,6 +8,7 @@ import Form from "./Hooks/Form"
 import Home from "./Home"
 import Login from "./Login"
 import DashBoard from "./DashBoard"
+import UseEffect from "./Hooks/UseEffect"
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 
 function App(){
@@ -22,6 +23,7 @@ const greet =()=>{
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/effect" element={<UseEffect/>}/>
       <Route path="/input" element={<Input/>}/>
       <Route path="/state" element={<UseState/>}/>
       <Route path="/signupform" element={<Form/>}/>
