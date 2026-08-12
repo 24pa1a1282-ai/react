@@ -11,6 +11,7 @@ import DashBoard from "./DashBoard"
 import UseEffect from "./Hooks/UseEffect"
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import Search from "./Hooks/Search"
+import Clock from "./Hooks/Clock"
 
 function App(){
 const greet =()=>{
@@ -24,6 +25,7 @@ const greet =()=>{
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/clock" element={<Clock/>}/>
       <Route path="/search" element={<Search/>}/>
       <Route path="/effect" element={<UseEffect/>}/>
       <Route path="/input" element={<Input/>}/>

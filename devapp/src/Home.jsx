@@ -9,6 +9,7 @@ const Home = () => {
       <button onClick={()=>navigate("/input")}>Input</button>
       <button onClick={()=>navigate('/state')}>State</button>
       <button onClick={()=>navigate('/login')}>Login</button>
+      <button onClick={()=>navigate('/clock')}>Clock</button>
     </div>
   )
 }
