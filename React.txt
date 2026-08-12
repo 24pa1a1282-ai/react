@@ -43,15 +43,15 @@ Class Components LifeCycle Methods
 -- componentDidUnmount
 
 Hooks in Functional Components
--- useState
--- useEffect
--- useRef
--- useMemo
--- useCallBack
--- useLayoutEffect
--- useReducer
--- useContext (Context API)
--- customHooks
+-- useState -- State Mangement
+-- useEffect -- side effects(API calls , Timers , Search , autosave)
+-- useRef -- refrence element (DOM elements , to prevent Re-render)
+-- useMemo -- memorized value
+-- useCallBack -- memorized function
+-- useLayoutEffect -- executes before rendering browser
+-- useReducer -- multiple or complex States
+-- useContext (Context API) -- Do declare GloBal Variables and to avoid Prop drilling
+-- customHooks -- user Defined Hooks
 
 
 

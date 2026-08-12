@@ -12,6 +12,8 @@ import UseEffect from "./Hooks/UseEffect"
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import Search from "./Hooks/Search"
 import Clock from "./Hooks/Clock"
+import Useref from "./Hooks/Useref"
+import PrevCount from "./Hooks/PrevCount"
 
 function App(){
 const greet =()=>{
@@ -25,6 +27,8 @@ const greet =()=>{
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/prevcount" element={<PrevCount/>}/>
+      <Route path="/ref" element={<Useref/>}/>
       <Route path="/clock" element={<Clock/>}/>
       <Route path="/search" element={<Search/>}/>
       <Route path="/effect" element={<UseEffect/>}/>
