@@ -1,27 +1,33 @@
-import React, { useState ,useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 
 const UseEffect = () => {
-const[data , setData]=useState([])
-
-const fetchData=async()=>{
-    try {
-        await fetch('https://jsonplaceholder.typicode.com/users')
-        .then(res =>res.json())
-        .then((datas)=>setData(datas))
-    } catch (error) {
-        
-    }
+const[users , setUsers]=useState([])
+const fetchData =async()=>{
+try {
+  await fetch('https://jsonplaceholder.typicode.com/users')
+  .then(res => res.json())
+  .then((data)=>setUsers(data))
+} catch (error) { 
+}
 }
 useEffect(()=>{
-    fetchData()
+  fetchData()
 },[])
-console.log(data)
-
+console.log(users)
   return (
     <div>
-      this is an effect example <br />
-
-
+      <h2>Users Data</h2>
+      <div>
+        {
+users.map((user)=>{
+  return (
+    <>
+    <p>{user.name} ------- {user.email}-------{user.address.city}</p>
+    </>
+  )
+})
+        }
+      </div>
     </div>
   )
 }

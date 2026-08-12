@@ -10,6 +10,7 @@ import Login from "./Login"
 import DashBoard from "./DashBoard"
 import UseEffect from "./Hooks/UseEffect"
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
+import Search from "./Hooks/Search"
 
 function App(){
 const greet =()=>{
@@ -23,6 +24,7 @@ const greet =()=>{
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/search" element={<Search/>}/>
       <Route path="/effect" element={<UseEffect/>}/>
       <Route path="/input" element={<Input/>}/>
       <Route path="/state" element={<UseState/>}/>
